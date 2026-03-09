@@ -99,7 +99,7 @@ export default function Careers() {
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-border pb-8">
                 <div>
                   <h3 className="text-2xl font-bold font-heading mb-3 text-primary group-hover:text-white transition-colors">Founding AI Engineer</h3>
-                  <p className="text-primary font-medium italic md:text-left max-w-sm text-sm whitespace-nowrap">
+                  <p className="text-primary font-medium italic md:text-left max-w-sm text-sm">
                     "Act as the CPTO for your product line. Own AI products from discovery to deployment."
                   </p>
                 </div>
