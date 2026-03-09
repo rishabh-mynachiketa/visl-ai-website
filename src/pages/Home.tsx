@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BrainCircuit, Layers, Network, Server, ChevronRight } from 'lucide-react';
-
+import varunImage from '../components/varun.avif';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -13,9 +13,9 @@ export default function Home() {
               backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
             }}
             transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-            className="absolute inset-0 opacity-30"
+            className="absolute inset-0 opacity-100"
             style={{
-              backgroundImage: 'radial-gradient(circle at center, #333 1px, transparent 1px)',
+              backgroundImage: 'radial-gradient(circle at center, rgba(255,255,255,0.15) 2px, transparent 2px)',
               backgroundSize: '40px 40px',
             }}
           />
@@ -27,11 +27,11 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border border-border text-sm font-medium text-primary mb-6"
+              className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-surface border border-border text-base font-medium text-primary mb-6"
             >
-              <span className="relative flex h-2 w-2">
+              <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
               </span>
               Building the Stealth
             </motion.div>
@@ -42,8 +42,8 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl sm:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-6"
             >
-              Autonomous <br />
-              <span className="text-gradient">AI Systems</span>
+              <span className="bg-white text-black px-4 py-2 rounded-xl inline-block mr-4">Visl.ai</span>
+              <span>Labs</span>
             </motion.h1>
 
             <motion.p
@@ -52,30 +52,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-secondary mb-10 max-w-2xl leading-relaxed"
             >
-              AI-native software that understands goals, reasons through complexity,
-              and autonomously executes complete workflows.
+              A stealth AI-native startup building high-velocity consumer products.
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <Link
-                to="/about"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors group"
-              >
-                Explore Our Vision
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link
-                to="/technology"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-surface text-primary font-medium hover:bg-surface/80 transition-colors border border-border"
-              >
-                Technology Overview
-              </Link>
-            </motion.div>
+
           </div>
         </div>
       </section>
@@ -95,7 +75,7 @@ export default function Home() {
               </h2>
               <p className="text-secondary text-lg mb-8 leading-relaxed">
                 The next era of computing will be driven by autonomous AI systems
-                capable of transforming how individuals and organizations interact
+                capable of transforming how individuals interact
                 with technology. We're building AI that doesn't just assist—it
                 actively performs meaningful work alongside humans.
               </p>
@@ -104,7 +84,7 @@ export default function Home() {
                 {[
                   'Understand complex goals',
                   'Plan and execute multi-step processes',
-                  'Adapt to changing conditions',
+                  'Provide seamless and intuitive user interactions',
                   'Deliver complete, production-ready outcomes'
                 ].map((point, i) => (
                   <motion.li
@@ -215,60 +195,55 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold font-heading mb-3 text-primary">{pillar.title}</h3>
                 <p className="text-secondary text-sm leading-relaxed mb-6">{pillar.desc}</p>
-                <Link to={pillar.link} className="inline-flex items-center text-primary font-medium text-sm group-hover:text-secondary transition-colors">
-                  Learn More <ArrowRight className="ml-1 w-4 h-4" />
-                </Link>
+
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-background-alt text-primary border-y border-border overflow-hidden relative">
-        <div className="absolute inset-0 opacity-5 bg-[url('https://picsum.photos/seed/tech/1920/1080')] bg-cover bg-center mix-blend-overlay" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section id="leadership" className="py-24 bg-background-alt border-y border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4">Product Philosophy</p>
-            <h2 className="text-4xl font-bold font-heading mb-6">AI-Native from the Ground Up</h2>
-            <p className="text-secondary text-lg">
-              We build AI-native software systems designed around artificial
-              intelligence rather than adding AI as an afterthought. Our products
-              integrate advanced models with structured orchestration layers
-              for coordinated actions across complex workflows.
-            </p>
+            <h2 className="text-4xl font-bold font-heading mb-4 text-primary">Leadership</h2>
+            <p className="text-xl text-secondary">Guided by experience and vision.</p>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto bg-black border border-border rounded-xl shadow-2xl overflow-hidden"
-          >
-            <div className="flex items-center px-4 py-3 bg-surface border-b border-border">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                <div className="w-3 h-3 rounded-full bg-green-500/80" />
+          <div className="max-w-4xl mx-auto bg-surface border border-border rounded-2xl p-8 md:p-12 shadow-2xl">
+            <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
+              <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-2xl overflow-hidden border border-border">
+                <img
+                  src={varunImage}
+                  alt="Varun Aggarwal"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                />
               </div>
-              <div className="ml-4 text-xs text-secondary font-mono">system_architecture.ts</div>
+              <div className="flex-1">
+                <h3 className="text-3xl font-bold font-heading mb-2 text-primary">Varun Aggarwal</h3>
+                <p className="text-primary font-medium mb-6">Founder & CEO</p>
+                <div className="space-y-4 text-secondary mb-8 leading-relaxed">
+                  <p>
+                    Entrepreneur and AI researcher who previously built and scaled Aspiring Minds, a global AI platform for skills assessment adopted by organizations worldwide. Achieved successful exit valued at over $100 million.
+                  </p>
+                  <p>
+                    Author of science, deeptech, and children's books. Built AI products for spoken English evaluation, coding skills, and others, achieving global sales with ARR of $20M+.
+                  </p>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    'Built global AI products at scale',
+                    'Deep expertise in AI evaluation systems',
+                    'Track record of successful AI company building'
+                  ].map((highlight, i) => (
+                    <li key={i} className="flex items-center gap-3 text-secondary text-sm">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="p-6 overflow-x-auto">
-              <pre className="font-mono text-sm leading-relaxed">
-                <code className="text-primary">
-                  <span className="text-purple-400">const</span> <span className="text-blue-400">VISL_System</span> = {'{'}
-                  {'\n  '}foundation: <span className="text-green-400">"Advanced Language & Multimodal Models"</span>,
-                  {'\n  '}orchestration: {'{'}
-                  {'\n    '}reasoning: <span className="text-green-400">"Multi-step planning & logic"</span>,
-                  {'\n    '}tools: <span className="text-green-400">"Function calling & APIs"</span>,
-                  {'\n    '}execution: <span className="text-green-400">"Iterative refinement loops"</span>,
-                  {'\n    '}evaluation: <span className="text-green-400">"Quality assessment & self-correction"</span>
-                  {'\n  }'},
-                  {'\n  '}output: <span className="text-green-400">"Complete, production-ready results"</span>
-                  {'\n}'};
-                </code>
-              </pre>
-            </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -282,12 +257,7 @@ export default function Home() {
             Join us in defining the future of intelligent software.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors"
-            >
-              Get in Touch
-            </Link>
+
             <Link
               to="/careers"
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-surface text-primary font-medium hover:bg-surface/80 transition-colors border border-border shadow-sm"

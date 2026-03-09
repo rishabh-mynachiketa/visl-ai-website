@@ -1,16 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, BrainCircuit } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import vislLogo from '../visl_logo_transparent.png';
 import { cn } from '../../lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
 
 const navItems = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Technology', path: '/technology' },
-  { name: 'Products', path: '/products' },
   { name: 'Careers', path: '/careers' },
-  { name: 'Contact', path: '/contact' },
 ];
 
 export function Navigation() {
@@ -42,11 +39,9 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="bg-white text-black p-1.5 rounded-lg group-hover:bg-gray-200 transition-colors">
-              <BrainCircuit className="w-6 h-6" />
-            </div>
+            <img src={vislLogo} alt="VISL AI Logo" className="w-8 h-8 object-contain" />
             <span className="font-heading font-bold text-xl tracking-tight text-primary">
-              VISL AI
+              visl.ai
             </span>
           </Link>
 
