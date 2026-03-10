@@ -23,16 +23,6 @@ export default function Careers() {
               of agentic AI systems. Work directly with experienced founders,
               own products end-to-end, and shape the future of intelligent software.
             </p>
-            <button
-              onClick={() => {
-                const element = document.getElementById('open-positions');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors"
-            >
-              View Open Positions
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
           </motion.div>
         </div>
       </section>
