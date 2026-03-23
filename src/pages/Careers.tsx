@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Code, Rocket, Shield } from 'lucide-react';
+import { ArrowRight, Code, Rocket, Shield, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Careers() {
@@ -137,6 +137,68 @@ export default function Careers() {
                 </Link>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSf9AuNH57CUgHOZrrhpGyRL2-xHDkPIhPLlVkskdlF3UkORFg/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors w-full sm:w-auto"
+                >
+                  Apply for this Position
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-surface rounded-2xl border border-border p-8 md:p-10 hover:border-white/20 transition-colors group">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-border pb-8">
+                <div>
+                  <h3 className="text-2xl font-bold font-heading mb-3 text-primary group-hover:text-white transition-colors">Product Strategy — Founders' Office</h3>
+                  <p className="text-primary font-medium italic md:text-left max-w-sm text-sm">
+                    "Strategic partner to the CEO. Take a product from blank page to sharp thesis, roadmap, and GTM engine."
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3 md:justify-end md:max-w-xs">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-secondary">Full-Time</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-secondary">Onsite (Gurgaon)</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-secondary">1-3 years</span>
+                </div>
+              </div>
+
+              <div className="space-y-8 text-secondary mb-10 text-sm leading-relaxed">
+                <div>
+                  <h4 className="text-primary font-semibold mb-3">Role Overview</h4>
+                  <p>
+                    This is not a conventional strategy or product role. You will be part of the highest decision-making work directly with the founders at the intersection of product intelligence, market strategy, and business design, shaping new product bets from first principles.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-primary font-semibold mb-3">Key Responsibilities</h4>
+                  <ul className="space-y-2 list-disc list-outside ml-4 marker:text-primary">
+                    <li>Deep-dive into AI domains to map competitive landscape and identify meaningful opportunities</li>
+                    <li>Develop structured frameworks and drive Go / No-Go decisions for product launches</li>
+                    <li>Define business and pricing models, architect growth strategies for initial adoption</li>
+                    <li>Work across product, growth, and operations to convert strategic ideas into shipped outcomes</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-primary font-semibold mb-3">Compensation & Benefits</h4>
+                  <ul className="space-y-2 list-disc list-outside ml-4 marker:text-primary">
+                    <li>Base Salary: ₹10 Lakhs CTC</li>
+                    <li>ESOPs: ₹10 Lakhs (accelerated vesting in 2 years)</li>
+                    <li>Total Package: ₹20 Lakhs</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row justify-end gap-4 pt-6 border-t border-border mt-8">
+                <Link
+                  to="/careers/product-strategy"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-surface border border-border text-primary font-medium hover:bg-white/5 transition-colors w-full sm:w-auto"
+                >
+                  Know More
+                </Link>
+                <a
+                  href="https://forms.gle/AETptDc1NvYQjVBp6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors w-full sm:w-auto"

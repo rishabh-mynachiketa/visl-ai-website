@@ -10,6 +10,7 @@ import { Footer } from './components/layout/Footer';
 import Home from './pages/Home';
 import Careers from './pages/Careers';
 import FoundingAIEngineer from './pages/FoundingAIEngineer';
+import ProductStrategy from './pages/ProductStrategy';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +33,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/careers/founding-ai-engineer" element={<FoundingAIEngineer />} />
+            <Route path="/careers/product-strategy" element={<ProductStrategy />} />
           </Routes>
         </main>
         <Footer />
