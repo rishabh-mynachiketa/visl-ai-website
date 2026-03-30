@@ -208,6 +208,63 @@ export default function Careers() {
                 </a>
               </div>
             </div>
+
+            <div className="bg-surface rounded-2xl border border-border p-8 md:p-10 hover:border-white/20 transition-colors group">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-border pb-8">
+                <div>
+                  <h3 className="text-2xl font-bold font-heading mb-3 text-primary group-hover:text-white transition-colors">AI Engineer Intern</h3>
+                  <p className="text-primary font-medium italic md:text-left max-w-sm text-sm">
+                    "Build and ship real AI products from day one — across text, video, and multimodal use cases."
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3 md:justify-end md:max-w-xs">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-secondary">Internship</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-secondary">Onsite (Gurgaon)</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-secondary">2–6 Months</span>
+                </div>
+              </div>
+
+              <div className="space-y-8 text-secondary mb-10 text-sm leading-relaxed">
+                <div>
+                  <h4 className="text-primary font-semibold mb-3">Role Overview</h4>
+                  <p>
+                    This is not a run-of-the-mill internship where you sit on the sidelines. You will be embedded directly within our product pods, working alongside founding AI engineers to build and ship real AI products. You will get your hands dirty on production-grade systems from day one.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-primary font-semibold mb-3">What You'll Do</h4>
+                  <ul className="space-y-2 list-disc list-outside ml-4 marker:text-primary">
+                    <li>Assist AI engineers in designing, building, and iterating on AI-powered products</li>
+                    <li>Work on agentic AI pipelines, LLM integrations, and multimodal systems</li>
+                    <li>Help with AI evaluations, debugging, prompt engineering, and performance analysis</li>
+                    <li>Support rapid prototyping and experimentation to test product hypotheses</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-primary font-semibold mb-3">Stipend & PPO</h4>
+                  <ul className="space-y-2 list-disc list-outside ml-4 marker:text-primary">
+                    <li>Stipend: ₹35,000 per month</li>
+                    <li>PPO: Full-time Founding AI Engineer offer (₹10L CTC + ₹10L ESOPs)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row justify-end gap-4 pt-6 border-t border-border mt-8">
+                <Link
+                  to="/careers/ai-engineer-intern"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-surface border border-border text-primary font-medium hover:bg-white/5 transition-colors w-full sm:w-auto"
+                >
+                  Know More
+                </Link>
+                <span
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/20 text-white/60 font-medium cursor-not-allowed w-full sm:w-auto"
+                >
+                  Coming Soon
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Careers from './pages/Careers';
 import FoundingAIEngineer from './pages/FoundingAIEngineer';
 import ProductStrategy from './pages/ProductStrategy';
+import AIEngineerIntern from './pages/AIEngineerIntern';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/careers/founding-ai-engineer" element={<FoundingAIEngineer />} />
             <Route path="/careers/product-strategy" element={<ProductStrategy />} />
+            <Route path="/careers/ai-engineer-intern" element={<AIEngineerIntern />} />
           </Routes>
         </main>
         <Footer />

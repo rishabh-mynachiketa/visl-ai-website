@@ -29,6 +29,7 @@ Visl AI Labs company website — a React SPA with Tailwind CSS v4, built with Vi
 | `/` | `src/pages/Home.tsx` |
 | `/careers` | `src/pages/Careers.tsx` |
 | `/careers/founding-ai-engineer` | `src/pages/FoundingAIEngineer.tsx` |
+| `/careers/ai-engineer-intern` | `src/pages/AIEngineerIntern.tsx` |
 
 Note: `src/pages/Contact.tsx`, `Products.tsx`, and `Technology.tsx` exist but are not currently routed.
 
