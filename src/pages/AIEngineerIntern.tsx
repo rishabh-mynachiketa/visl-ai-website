@@ -32,11 +32,15 @@ export default function AIEngineerIntern() {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading leading-tight mb-8 text-primary">
                             AI Engineer Intern
                         </h1>
-                        <span
-                            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/20 text-white/60 font-medium cursor-not-allowed"
+                        <a
+                            href="https://forms.gle/uG2VqhGBJyX1NhEt7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors"
                         >
-                            Coming Soon
-                        </span>
+                            Apply for this Position
+                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </a>
                     </motion.div>
                 </div>
             </section>
@@ -113,11 +117,15 @@ export default function AIEngineerIntern() {
 
                     <div className="mt-16 pt-10 border-t border-border text-center">
                         <h3 className="text-2xl font-bold font-heading mb-8 text-primary">Ready to build the future?</h3>
-                        <span
-                            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/20 text-white/60 font-medium cursor-not-allowed"
+                        <a
+                            href="https://forms.gle/uG2VqhGBJyX1NhEt7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors"
                         >
-                            Coming Soon
-                        </span>
+                            Apply for this Position
+                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </a>
                     </div>
                 </div>
             </section>

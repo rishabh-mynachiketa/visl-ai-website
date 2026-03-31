@@ -258,11 +258,15 @@ export default function Careers() {
                 >
                   Know More
                 </Link>
-                <span
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white/20 text-white/60 font-medium cursor-not-allowed w-full sm:w-auto"
+                <a
+                  href="https://forms.gle/uG2VqhGBJyX1NhEt7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors w-full sm:w-auto"
                 >
-                  Coming Soon
-                </span>
+                  Apply for this Position
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>
