@@ -3,18 +3,6 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/new"
-  to = "https://vivi-swart.vercel.app/new"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/new/*"
-  to = "https://vivi-swart.vercel.app/new/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
